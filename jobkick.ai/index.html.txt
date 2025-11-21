@@ -306,5 +306,16 @@ ${skillsList.map(s => '• ' + s).join('\n')}
       document.getElementById('formCard').scrollIntoView({ behavior: 'smooth' });
     });
   </script>
+<section class="recommended">
+  <h2>Recommended Tools</h2>
+  <p>These tools help with remote work, productivity, and job applications.</p>
+  <ul>
+    <li><a href="https://amzn.to/4rcF4Xp" target="_blank">Best Budget Laptop for Remote Work</a></li>
+    <li><a href="https://amzn.to/3X4PYRj" target="_blank">Affordable Keyboard for Productivity</a></li>
+    <li><a href="https://amzn.to/43Guz4u" target="_blank">Mouse for Everyday Use</a></li>
+  </ul>
+  <small>Some links may earn me a small commission at no extra cost to you.</small>
+</section>
+
 </body>
 </html>
