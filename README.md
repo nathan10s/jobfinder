@@ -302,7 +302,7 @@ ${skillsList.map(s => '• ' + s).join('\n')}
 
       output.textContent = text;
     });
-
+<script src="https://cdn.counter.dev/script.js" data-id="e1251182-0cdb-4b37-b4a6-6f3fb7d76485" data-utcoffset="0"></script>
     document.getElementById('scrollToForm').addEventListener('click', () => {
       document.getElementById('formCard').scrollIntoView({ behavior: 'smooth' });
     });
