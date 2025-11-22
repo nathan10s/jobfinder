@@ -192,8 +192,8 @@
             <strong>💸 How this site can pay you (from day one):</strong><br />
             – Add “Recommended resources” with affiliate links<br />
             – Later, add privacy-friendly ads when you get traffic
-            <br />
-         href="https://ko-fi.com/Nathan10s"
+           <a class="tip-btn"
+   href="https://ko-fi.com/Nathan10s"
    target="_blank"
    rel="noopener">
   Tip the creator on Ko-fi
@@ -321,6 +321,7 @@ ${skillsList.map(s => '• ' + s).join('\n')}
 
 </body>
 </html>
+
 
 
 
