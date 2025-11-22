@@ -188,12 +188,15 @@
             for data entry, chat support, admin, and junior tech roles.
           </p>
           <button class="btn btn-primary" id="scrollToForm">Try the demo</button>
-          <p class="meta">Phase 1: prototype · When traffic grows, this site can earn from tips, sponsors or ads.</p>
+          <p class="meta">
+  Free CV & cover letter helper for entry-level and remote roles.
+</p>
+
 
        <div class="money-box">
-  <strong>💸 How this site can pay you (from day one):</strong><br />
-  – Add “Recommended resources” with affiliate links<br />
-  – Later, add privacy-friendly ads when you get traffic
+  <strong>💸 Support JobFinder & keep it free:</strong><br />
+  – Use the recommended tools below when they’re helpful<br />
+  – Share this site with friends who are job hunting
   <br />
   <a class="tip-btn"
      href="https://ko-fi.com/Nathan10s"
@@ -202,6 +205,7 @@
     Tip the creator on Ko-fi
   </a>
 </div>
+
 
 
         <div class="card" id="formCard">
@@ -255,20 +259,22 @@
       </section>
 
       <section class="section">
-        <h2>Ad space (placeholder)</h2>
-        <div class="feature">
-          <p>
-            This box is where you’d later paste your ad script (e.g. from an ad network) once your site has traffic
-            and gets approved. For now, it just reminds you that the site is an asset that can earn.
-          </p>
-        </div>
-      </section>
+  <h2>Work with JobFinder</h2>
+  <div class="feature">
+    <p>
+      JobFinder is a free tool designed to help people create better CVs and cover letters for entry-level and remote roles.
+      In the future, this space may be used for partnerships with training providers, job boards, or tools that genuinely help job seekers.
+    </p>
+  </div>
+</section>
+
     </main>
 
-    <footer>
-      <span>© <span id="year"></span> JobKick AI – Prototype</span>
-      <span>Built as a learning project · Not real AI yet</span>
-    </footer>
+<footer>
+  <span>© <span id="year"></span> JobFinder – CV & Cover Letter Helper</span>
+  <span>Built to help beginners apply for remote and entry-level jobs.</span>
+</footer>
+
   </div>
 
   <script>
