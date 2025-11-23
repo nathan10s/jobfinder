@@ -238,7 +238,7 @@
             Fill the form and click the button to see sample CV text.
           </div>
         </div>
-      </section>
+
 
       <section class="section">
         <h2>Recommended resources (monetise with affiliate links later)</h2>
@@ -268,7 +268,7 @@
   </div>
 </section>
 
-    </main>
+  
 
 <footer>
   <span>© <span id="year"></span> JobFinder – CV & Cover Letter Helper</span>
@@ -313,9 +313,4 @@ ${skillsList.map(s => '• ' + s).join('\n')}
       output.textContent = text;
     });
 <script src="https://cdn.counter.dev/script.js" data-id="e1251182-0cdb-4b37-b4a6-6f3fb7d76485" data-utcoffset="0"></script>
-    document.getElementById('scrollToForm').addEventListener('click', () => {
-      document.getElementById('formCard').scrollIntoView({ behavior: 'smooth' });
-    });
-  </script>
-</body>
-</html>
+ 
