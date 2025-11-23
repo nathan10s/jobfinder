@@ -1,4 +1,3 @@
-# jobkick-ai
 JobFinder
 <html lang="en">
 <head>
