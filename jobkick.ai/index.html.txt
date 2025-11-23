@@ -209,11 +209,12 @@ JobFinder
             <span>🧑‍💻</span>
             <span>Built for first jobs & remote applications</span>
           </div>
-          <h1>AI-style CV & cover letter helper for entry-level UK jobs.</h1>
-          <p>
-            Describe your skills and availability and get cleaner CV text you can use
-            for data entry, chat support, admin, and junior tech roles.
-          </p>
+         <h1>Create stronger CVs and cover letters for remote & entry-level jobs.</h1>
+<p>
+  JobFinder helps you turn your skills and availability into clear CV summaries and simple cover letters
+  you can use when applying for data entry, chat support, admin, and junior tech roles.
+</p>
+
           <button class="btn btn-primary" id="scrollToForm">Try the demo</button>
          <p class="meta">
   Free CV & cover letter helper for entry-level and remote roles.
@@ -265,6 +266,22 @@ JobFinder
           </div>
         </div>
       </section>
+<section class="section">
+  <h2>How to use JobFinder</h2>
+  <div class="feature">
+    <p>Getting started is simple:</p>
+    <ol style="margin-top:8px; padding-left:18px;">
+      <li>Choose your target role from the dropdown (e.g. Data Entry Clerk, Chat Support Agent).</li>
+      <li>Add your skills, availability, and any experience or courses you’ve done.</li>
+      <li>Click “Generate sample CV text” to get a starting point for your CV.</li>
+      <li>Copy the parts you like into your CV document and edit them to match each job.</li>
+    </ol>
+    <p style="margin-top:8px;">
+      This tool is designed for beginners and people who want to apply for remote or flexible work
+      without needing lots of experience.
+    </p>
+  </div>
+</section>
 
       <!-- AFFILIATE / RECOMMENDED TOOLS SECTION -->
       <section class="recommended">
@@ -280,7 +297,32 @@ JobFinder
 
 <section class="section">
   <h2>Work with JobFinder</h2>
+<section class="section">
+  <h2>Work with JobFinder</h2>
   <div class="feature">
+    <p>
+      JobFinder is a free tool designed to help people create better CVs and cover letters for entry-level and remote roles.
+      In the future, this space may be used for partnerships with training providers, job boards, or tools that genuinely help job seekers.
+    </p>
+  </div>
+</section>
+<section class="section">
+  <h2>About JobFinder</h2>
+  <div class="feature">
+    <p>
+      JobFinder was created as a small, focused tool to help people who are just getting started with remote work,
+      part-time jobs, or their first office-style role. The goal is to make writing CVs and cover letters less stressful,
+      especially if you don’t have much experience yet.
+    </p>
+    <p style="margin-top:8px;">
+      If this site helps you get closer to a job, you can support it using the Ko-fi button above.
+      That support goes towards keeping the site online and improving it over time.
+    </p>
+  </div>
+</section>
+
+
+<div class="feature">
     <p>
       JobFinder is a free tool designed to help people create better CVs and cover letters for entry-level and remote roles.
       In the future, this space may be used for partnerships with training providers, job boards, or tools that genuinely help job seekers.
@@ -339,6 +381,7 @@ ${skillsList.map(s => '• ' + s).join('\n')}
   </script>
 </body>
 </html>
+
 
 
 
