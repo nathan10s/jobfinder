@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,22 +9,13 @@
 
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      /* More standout background */
-     background: linear-gradient(
-  to bottom,
-  #a7f3d0 0%,   /* Mint-pastel */
-  #6ee7b7 40%,  /* Light teal */
-  #5eead4 75%,  /* Aqua pastel */
-  #2dd4bf 100%  /* Soft teal bottom */
-);
-
-
-      color: #e5e7eb;
+      background: #f3f4f6;          /* light grey for max readability */
+      color: #111827;               /* dark text */
       line-height: 1.6;
-      font-size: 18px; /* Bigger base text */
+      font-size: 18px;
     }
 
-    a { color: #38bdf8; text-decoration: none; }
+    a { color: #0f766e; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     .page {
@@ -43,54 +34,60 @@
     .logo {
       font-weight: 800;
       font-size: 1.5rem;
-      color: #e5e7eb;
-    }
-
-    .logo span {
-      color: #22c55e;
+      color: #0f172a;
     }
 
     .pill {
       font-size: 0.85rem;
       border-radius: 999px;
-      padding: 0.25rem 0.9rem;
-      border: 1px solid #38bdf8;
-      background: rgba(15, 23, 42, 0.8);
-      backdrop-filter: blur(6px);
-    }
-
-    h1 {
-      font-size: clamp(2.3rem, 4.2vw, 3rem);
-      margin-bottom: 1.1rem;
+      padding: 0.3rem 0.9rem;
+      border: 1px solid #0f766e;
+      color: #0f766e;
+      background: #ecfdf5;
     }
 
     .hero {
       display: grid;
       gap: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     @media (min-width: 768px) {
       .hero {
         grid-template-columns: 3fr 2.2fr;
-        align-items: start;
+        align-items: stretch;
       }
+    }
+
+    .hero-main {
+      background: linear-gradient(135deg, #0f766e, #22c55e);
+      border-radius: 1.25rem;
+      padding: 1.5rem;
+      color: #ecfdf5;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
     }
 
     .badge {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      background: rgba(15, 23, 42, 0.9);
+      background: rgba(15, 23, 42, 0.4);
       border-radius: 999px;
       padding: 0.3rem 0.9rem;
-      border: 1px solid #1f2937;
       font-size: 0.85rem;
-      color: #9ca3af;
       margin-bottom: 0.85rem;
     }
 
-    .hero p {
-      color: #cbd5f5;
+    .badge span:last-child {
+      color: #e5e7eb;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 4.2vw, 3rem);
+      margin-bottom: 1rem;
+    }
+
+    .hero-main p {
       margin-bottom: 1rem;
       font-size: 1rem;
     }
@@ -104,64 +101,120 @@
       font-size: 0.95rem;
     }
 
-    /* Eye-catching primary button */
     .btn-primary {
-      background: linear-gradient(135deg, #22c55e, #a3e635);
-      color: #022c22;
+      background: #ecfeff;
+      color: #0f766e;
       margin-right: 0.5rem;
-      box-shadow: 0 12px 30px rgba(34, 197, 94, 0.35);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
       transition: transform 0.08s ease, box-shadow 0.08s ease;
     }
 
     .btn-primary:hover {
       transform: translateY(-1px);
-      box-shadow: 0 16px 36px rgba(34, 197, 94, 0.45);
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.3);
     }
 
     .meta {
       font-size: 0.85rem;
-      color: #9ca3af;
+      color: #d1fae5;
       margin-top: 0.35rem;
     }
 
+    .money-box {
+      margin-top: 1rem;
+      padding: 0.9rem;
+      border-radius: 0.95rem;
+      border: 1px dashed #bbf7d0;
+      background: rgba(15, 23, 42, 0.25);
+      font-size: 0.9rem;
+      color: #ecfdf5;
+    }
+
+    .tip-btn {
+      display: inline-block;
+      margin-top: 0.55rem;
+      border-radius: 999px;
+      padding: 0.45rem 1rem;
+      border: 1px solid #bbf7d0;
+      background: #ecfdf5;
+      color: #065f46;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .tip-btn:hover {
+      background: #bbf7d0;
+    }
+
     .card {
-      background: rgba(15, 23, 42, 0.95);
+      background: #ffffff;
       border-radius: 1.1rem;
       padding: 1.4rem;
-      border: 1px solid #1f2937;
-      box-shadow: 0 18px 40px rgba(0,0,0,0.55);
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
       font-size: 1rem;
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+      color: #0f172a;
     }
 
     label {
       display: block;
       font-size: 0.9rem;
       margin-bottom: 0.25rem;
-      color: #9ca3af;
+      color: #4b5563;
     }
 
     input, select, textarea {
       width: 100%;
       border-radius: 0.8rem;
-      border: 1px solid #1f2937;
+      border: 1px solid #d1d5db;
       padding: 0.6rem 0.8rem;
-      background: #020617;
-      color: #e5e7eb;
+      background: #f9fafb;
+      color: #111827;
       font-size: 0.95rem;
       margin-bottom: 0.8rem;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: 2px solid #22c55e;
+      outline-offset: 1px;
+      border-color: #22c55e;
+      background: #ffffff;
     }
 
     textarea { min-height: 80px; resize: vertical; }
 
     .output {
-      background: #020617;
+      background: #f9fafb;
       border-radius: 0.9rem;
-      border: 1px dashed #1f2937;
+      border: 1px dashed #d1d5db;
       padding: 0.85rem;
       font-size: 0.9rem;
-      color: #9ca3af;
+      color: #374151;
       white-space: pre-wrap;
       margin-top: 0.7rem;
+      min-height: 80px;
+    }
+
+    .copy-btn {
+      margin-top: 0.5rem;
+      width: 100%;
+      border-radius: 999px;
+      padding: 0.55rem 1.2rem;
+      border: 1px solid #d1d5db;
+      background: #e5e7eb;
+      color: #111827;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .copy-btn:hover {
+      background: #d1d5db;
     }
 
     .section {
@@ -172,83 +225,38 @@
       font-size: 1.4rem;
       margin-bottom: 0.85rem;
       font-weight: 600;
-    }
-
-    .grid {
-      display: grid;
-      gap: 1rem;
-    }
-
-    @media (min-width: 768px) {
-      .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      color: #0f172a;
     }
 
     .feature {
       border-radius: 0.95rem;
-      background: rgba(15, 23, 42, 0.95);
-      border: 1px solid #1f2937;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
       padding: 1rem;
       font-size: 0.95rem;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
     }
 
     .feature h3 {
       font-size: 1.05rem;
       margin-bottom: 0.45rem;
-      color: #e5e7eb;
-    }
-
-    footer {
-      margin-top: 3rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid #1f2937;
-      font-size: 0.8rem;
-      color: #9ca3af;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 0.75rem;
-      align-items: center;
-    }
-
-    .money-box {
-      padding: 0.9rem;
-      border-radius: 0.95rem;
-      border: 1px dashed #22c55e88;
-      background: rgba(6, 78, 59, 0.9);
-      font-size: 0.9rem;
-      color: #bbf7d0;
-      margin-top: 0.9rem;
-    }
-
-    .tip-btn {
-      display: inline-block;
-      margin-top: 0.55rem;
-      border-radius: 999px;
-      padding: 0.45rem 1rem;
-      border: 1px solid #22c55e;
-      background: #022c22;
-      color: #bbf7d0;
-      font-size: 0.85rem;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .tip-btn:hover {
-      background: #065f46;
+      color: #0f172a;
     }
 
     .recommended {
-      background: rgba(15, 23, 42, 0.95);
-      border: 1px solid #1f2937;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
       border-radius: 12px;
       padding: 18px;
       margin-top: 24px;
       font-size: 0.95rem;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
     }
 
     .recommended h2 {
       margin-bottom: 8px;
       font-size: 1.35rem;
+      color: #0f172a;
     }
 
     .recommended ul {
@@ -261,27 +269,30 @@
       margin: 6px 0;
     }
 
-    .recommended a {
-      text-decoration: none;
-      color: #38bdf8;
-      font-weight: 500;
-    }
-
-    .recommended a:hover {
-      text-decoration: underline;
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.8rem;
+      color: #6b7280;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.75rem;
+      align-items: center;
     }
   </style>
 </head>
 <body>
   <div class="page">
     <header>
-      <div class="logo">JobFinder<span>AI</span></div>
+      <div class="logo">JobFinder</div>
       <div class="pill">Remote · No Experience · UK Friendly</div>
     </header>
 
     <main>
       <section class="hero">
-        <div>
+        <div class="hero-main">
           <div class="badge">
             <span>🧑‍💻</span>
             <span>Built for first jobs & remote applications</span>
@@ -293,7 +304,7 @@
             Just choose a role, add your skills, and click “Generate”.
           </p>
           <button class="btn btn-primary" id="scrollToForm">Try the demo</button>
-          <p class="meta">Free to use · Works best for first jobs and remote roles.</p>
+          <p class="meta">Free to use · Designed for people with little or no experience.</p>
 
           <div class="money-box">
             <strong>💸 Support JobFinder & keep it free:</strong><br />
@@ -310,7 +321,7 @@
         </div>
 
         <div class="card" id="formCard">
-          <h2 style="font-size:1.1rem; margin-bottom:0.6rem;">Quick demo</h2>
+          <h2>Quick demo</h2>
           <form id="demoForm">
             <label for="role">Target role</label>
             <select id="role" name="role">
@@ -338,6 +349,7 @@
           <div id="output" class="output">
             Fill the form and click the button to see sample CV text.
           </div>
+          <button id="copyBtn" class="copy-btn">Copy CV text</button>
         </div>
       </section>
 
@@ -395,6 +407,7 @@
 
     const form = document.getElementById('demoForm');
     const output = document.getElementById('output');
+    const copyBtn = document.getElementById('copyBtn');
 
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -428,6 +441,22 @@ ${skillsList.map(s => '• ' + s).join('\n')}
 
     document.getElementById('scrollToForm').addEventListener('click', () => {
       document.getElementById('formCard').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    copyBtn.addEventListener('click', async () => {
+      const text = output.textContent.trim();
+      if (!text || text.startsWith('Fill the form')) {
+        output.textContent = 'Generate some CV text first, then you can copy it.';
+        return;
+      }
+      try {
+        await navigator.clipboard.writeText(text);
+        const original = output.textContent;
+        output.textContent = original + '\n\n[Copied to clipboard ✅]';
+      } catch (err) {
+        const original = output.textContent;
+        output.textContent = original + '\n\n[Could not copy automatically – please select and copy manually.]';
+      }
     });
   </script>
 
